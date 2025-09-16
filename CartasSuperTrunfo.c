@@ -9,7 +9,7 @@ int main() {
                   //Mensagem inial
         printf("Bem vindo ao Super Trunfo!\n");
 
-// Área para definição das variáveis para armazenar as propriedades das cidades 
+// Área para definição das variáveis para armazenar as propriedades das cidades 1
 
         //Cidade 1
     char estado [20];
@@ -19,7 +19,7 @@ int main() {
     float km²;  
     int PontosTuristicos;
 
-// Área para entrada de dados
+// Área para entrada de dados cidade 1
         printf("Digite o nome do estado: \n");
         scanf("%s", &estado);
 
@@ -38,13 +38,15 @@ int main() {
         printf("Digite Pontos Turistico: \n");
         scanf("%d", &PontosTuristicos);
               
-// Área para exibição dos dados da cidade
+// Área para exibição dos dados da cidade 1
         printf("Estado: %s - Cidade: %s - Código: %s \n", estado, cidade, código);
         printf("Populção: %f \n", população);
         printf("Km²: %f \n", km²);
         printf("Pontos Turisticos: %d \n", PontosTuristicos);
 
-    //Cidade 2
+// Área para definição das variáveis para armazenar as propriedades das cidades 2        
+    
+        //Cidade 2
     char estado2 [20];
     char código2 [20];
     char cidade2 [15];
@@ -52,7 +54,7 @@ int main() {
     float km²2;  
     int PontosTuristicos2;
 
-// Área para entrada de dados
+// Área para entrada de dados cidade 2
         printf("Digite o nome do estado: \n");
         scanf("%s", &estado2);
 
@@ -71,7 +73,7 @@ int main() {
         printf("Digite Pontos Turistico: \n");
         scanf("%d", &PontosTuristicos2);
               
-// Área para exibição dos dados da cidade
+// Área para exibição dos dados da cidade 2
         printf("Estado: %s - Cidade: %s - Código: %s \n", estado2, cidade2, código2);
         printf("Populção: %f \n", população2);
         printf("Km²: %f \n", km²2);
