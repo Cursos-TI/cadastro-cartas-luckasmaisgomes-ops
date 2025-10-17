@@ -6,7 +6,7 @@
 
 int main() {
           
-                  //Mensagem inial
+//Mensagem inicial
         printf("Bem vindo ao Super Trunfo!\n");
 
 // Área para definição das variáveis para armazenar as propriedades das cidades 1
@@ -16,18 +16,28 @@ int main() {
     char código1 [20];
     char cidade1 [15];
     float população1;
-    float km²1;  
+    float Area1; 
+    float PIB1; 
     int PontosTuristicos1;
+    float Densidade1;
+    float PIBperCapita1;
+    float mediaD1;
+    float mediaP1;
 
-    // Área para definição das variáveis para armazenar as propriedades das cidades 2        
+// Área para definição das variáveis para armazenar as propriedades das cidades 2        
     
         //Cidade 2
     char estado2 [20];
     char código2 [20];
     char cidade2 [15];
     float população2;
-    float km²2;  
+    float Area2;  
+    float PIB2;
     int PontosTuristicos2;
+    float Densidade2;
+    float PIBperCapita2;
+    float mediaD2;
+    float mediaP2;
 
 // Área para entrada de dados cidade 1
         printf("Digite o nome do estado n°1: \n");
@@ -43,10 +53,17 @@ int main() {
         scanf("%f", &população1);
 
         printf("Digite o km² n°1: \n");
-        scanf("%f", &km²1);
+        scanf("%f", &Area1);
+
+        printf("Digite o PIB da carta 1: \n");
+        scanf("%f", &PIB1);
 
         printf("Digite Pontos Turistico n°1: \n");
         scanf("%d", &PontosTuristicos1);
+    
+    mediaD1 = (float)(população1 / Area1) /2;
+    mediaP1 = (float)(PIB1 / população1) /2;
+
               
 // Área para entrada de dados cidade 2
         printf("Digite o nome do estado n°2: \n");
@@ -62,22 +79,36 @@ int main() {
         scanf("%f", &população2);
 
         printf("Digite o km² n°2: \n");
-        scanf("%f", &km²2);
+        scanf("%f", &Area2);
+
+        printf("Digite o PIB da carta 2: \n");
+        scanf("%f", &PIB2);
 
         printf("Digite Pontos Turistico n°2: \n");
         scanf("%d", &PontosTuristicos2);
+    
+    mediaD2 = (float)(população2 / Area2) /2;
+    mediaP2 = (float)(PIB2 / população2) /2;
 
 // Área para exibição dos dados da cidade 1
         printf("Estado 1: %s - Cidade: %s - Código: %s \n", estado1, cidade1, código1);
-        printf("Populção: %f \n", população1);
-        printf("Km²: %f \n", km²1);
+        printf("Populção: %.3f \n", população1);
+        printf("Área: %.3f km² \n", Area1);
+        printf("PIB: %.f bilhões de reais \n", PIB1);
         printf("Pontos Turisticos: %d \n", PontosTuristicos1);
+        printf("Densidade Populacional: %.3f hab/km² \n", mediaD1);
+        printf("PIB per capita: %.3f reais \n", mediaP1);
 
 // Área para exibição dos dados da cidade 2
         printf("Estado 2: %s - Cidade: %s - Código: %s \n", estado2, cidade2, código2);
-        printf("Populção: %f \n", população2);
-        printf("Km²: %f \n", km²2);
+        printf("Populção: %.3f \n", população2);
+        printf("Área: %.3f km² \n", Area2);
+        printf("PIB: %.f bilhões de reais \n", PIB2);
         printf("Pontos Turisticos: %d \n", PontosTuristicos2);
+        printf("Densidade Populacional: %.3f hab/km² \n", mediaD2);
+        printf("PIB per capita: %.3f reais \n", mediaP2);
 
-        return 0;
+
+    return 0;
+    
 } 
