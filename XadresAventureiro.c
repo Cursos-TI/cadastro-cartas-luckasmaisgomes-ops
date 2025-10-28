@@ -11,7 +11,9 @@ int main() {
     const int movimentoTorre = 5;
     const int movimentoBispo = 5;
     const int movimentoRainha = 8;
-    
+    const int movimentoCavaloBaixo = 2;
+    const int movimentoCavaloEsquerda = 1; 
+
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
@@ -21,9 +23,7 @@ int main() {
             while (Bispo < movimentoBispo){
             
             if (Bispo < movimentoBispo ) // (o valor de "i" dividido "%" por "2" que dá o resultado = "0" sera o que eu preciso)
-            {
-            printf("Cima, Direita\n"); // Oque ira aparece na tela inicial do codigo indicando o movimento 
-            }
+                { printf("Cima, Direita\n"); } // Oque ira aparece na tela inicial do codigo indicando o movimento 
                 Bispo++;}
             
     
@@ -33,9 +33,8 @@ int main() {
         printf(" Movimento da Torre (%d casas para Direita)\n", movimentoTorre);
 
         for (int i = 0; i < movimentoTorre; i++) // "int i"= torre, "0" valor inicial *ou seja parado*, "i"= torre, "<="= menor ou igual a "i", "5" vezes que sera repetido ou seja vezes movida, "i++" adiciona +1 ao valor anterior
-        {
-            printf("Direita\n"); // Oque ira aparece na tela inicial do codigo indicando o movimento 
-        }
+        
+        {printf("Direita\n");} // Oque ira aparece na tela inicial do codigo indicando o movimento 
            
     printf("\n");
 
@@ -61,6 +60,25 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+    printf(" Movimento do Cavalo (%d Baixo, %d Esquerda) ---\n", movimentoCavaloBaixo, movimentoCavaloEsquerda);
+
+    int movimentoCAVALO = 1;
+
+    do {
+        for(int B = 0; B < movimentoCavaloBaixo; B++) {
+            printf("baixo\n");
+        }
+        
+        for(int B = 0; B < movimentoCavaloEsquerda; B++ ) {
+            printf("esquerda\n");
+        }
+    
+        movimentoCAVALO = 0;
+
+    } while (movimentoCAVALO > 0);
+
+    printf("\n");
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
